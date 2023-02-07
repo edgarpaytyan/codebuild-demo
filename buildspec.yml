@@ -35,5 +35,5 @@ phases:
   post_build:
     commands:
       - echo Pushing the Docker image...
-      - docker push webapp:webapp 001617643702.dkr.ecr.us-east-1.amazonaws.com/webapp:latest
+      - docker push 001617643702.dkr.ecr.us-east-1.amazonaws.com/webapp:latest
       - docker push 001617643702.dkr.ecr.us-east-1.amazonaws.com/webapp:$COMMIT_ID
